@@ -15,7 +15,7 @@ export default function renderOrderSummary() {
     document.querySelector('.js-products').innerHTML = `
     <div class="empty-cart-msg">
       <p>Your cart is empty</p>
-      <a href="/">View products</a>
+      <a href="index.html">View products</a>
     </div>
     `;
     return;
@@ -164,4 +164,5 @@ export default function renderOrderSummary() {
 
     return html;
   }
+
 }
