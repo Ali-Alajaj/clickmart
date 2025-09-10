@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/checkout.css">
+  <link rel="stylesheet" href="styles/checkout-header.css">
+  <title>Checkout</title>
+</head>
+<body>
+  <header>
+    <div class="header-left-section">
+      <a href="index.html">
+        <img class="logo" src="images/logos/click-mart-logo2.png">
+        <img class="mobile-logo" src="images/logos/clickmart-mobile-logo.jpg">
+      </a>
+    </div>
+
+    <div class="header-middle-section">
+        <a href="index.html" class="cart-quantity-link">
+          <span>Checkout </span>
+          <img class="cart-icon" src="images/icons/cart-icon.png">
+          <span class="cart-quantity">
+            (<span class="js-cart-quantity">4</span> Items)
+          </span>
+        </a>
+    </div>
+
+    <div class="header-right-section">
+      <div class="lock-icon-container">
+        <img class="lock-icon" src="images/icons/checkout-lock-icon.png">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <p class="page-title">Review your orders</p>
+    <div class="checkout-grid">
+      <div class="products js-products"></div>
+      <section class="payment-summary js-payment-summary">
+        
+      </section>
+    </div>
+  </main>
+
+  <script src="scripts/checkout.js" type="module"></script>
+</body>
+</html>

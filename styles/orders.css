@@ -1,0 +1,157 @@
+main {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  margin-bottom: 100px;
+}
+
+.title {
+  color: white;
+  font-size: 26px;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+.order-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+}
+
+.order-section {
+  background-color: white;
+  border-radius: 13px;
+}
+
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(226, 226, 226);
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  padding: 20px 25px;
+}
+
+.orders-header-left-section {
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-info {
+  display: grid;
+  grid-template-columns: 110px 1fr 220px;
+  column-gap: 16px;
+  padding: 40px 25px;
+  row-gap: 41px;
+}
+
+.product-image {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  object-position: center;
+}
+.product-info p {margin: 5px 0;}
+
+.product-name {
+  font-weight: 600;
+}
+
+.buy-again-button {
+  background-color: rgb(131, 236, 190);
+  width: 140px;
+  border: none;
+  height: 35px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.not-clicked, .clicked-message {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.invisible {display: none;}
+
+.buy-again-icon {
+  width: 25px;
+  margin-right: 8px;
+}
+
+.product-actions {align-self: start;}
+
+.track-package-button {
+  width: 100%;
+  height: 36px;
+  font-size: 15px;
+  border: solid rgb(183, 183, 183) 1px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+  cursor: pointer;
+}
+
+.info-title {font-weight: 600;}
+
+@media (max-width: 800px) {
+  .product-actions {
+    grid-column: 2;
+    margin-bottom: 30px;
+  }
+
+  .track-package-button {width: 140px;}
+  .order-info {
+    grid-template-columns: 110px 1fr;
+    row-gap: 10px;
+  }
+}
+
+@media (max-width: 625px) {
+  .orders-header {
+    flex-direction: column;
+  }
+
+  .orders-header-left-section {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .orders-header-right-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-info {
+    display: flex;
+    margin-bottom: 6px;
+  }
+  .header-info p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+
+  .info-title {
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 445px) {
+  .order-info {
+    grid-template-columns: 1fr;
+  }
+
+  .product-actions {
+    grid-column: 1;
+  }
+
+  .product-image {
+    width: 190px;
+    height: 190px;
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orders</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/general-header.css">
+  <link rel="stylesheet" href="styles/orders.css">
+  <link rel="stylesheet" href="styles/general-nav.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-left-section">
+      <a href="index.html">
+        <img class="logo" src="images/logos/click-mart-logo2.png">
+        <img class="mobile-logo" src="images/logos/clickmart-mobile-logo.jpg">
+      </a>
+    </div>
+
+    <div class="header-middle-section">
+      <input class="search-bar js-search-bar" type="text" placeholder="Search for products">
+      <button class="search-button js-search-button">
+        <img class="search-icon" src="images/icons/search-icon.png">
+      </button>
+      <button class="filter-button js-filter-button">
+        <img class="filter-icon" src="images/icons/filter-icon.png">
+      </button>
+    </div>
+
+    <div class="header-right-section">
+      <a class="orders-link" href="orders.html">
+        <span class="returns-text">Returns</span>
+        <span class="orders-text">& Orders</span>
+      </a>
+
+      <a class="cart-link" href="checkout.html">
+        <div class="cart-quantity js-cart-quantity"></div>
+        <img class="cart-icon" src="images/icons/cart-icon.png">
+        <span>Cart</span>
+      </a>
+    </div>
+
+    <div class="hamburger-menu-button js-hamburger-menu-button">
+      <img src="images/icons/hamburger-menu.png">
+    </div>
+</header>
+<header class="mobile-header js-mobile-header">
+  <a href="orders.html">Returns & Orders</a>
+  <a href="checkout.html">
+    Cart (<span class="mobile-quantity js-cart-quantity">3</span>)
+  </a>
+</header>
+
+<nav class="js-nav">
+  <button class="x-button js-x-button">
+    <img class="x-icon" src="images/icons/x-icon.png">
+  </button>
+  <div>
+    <input type="checkbox" class="js-filter-checkbox"
+    data-type="clothing">
+    <p>Clothing</p>
+  </div>
+  <div>
+    <input type="checkbox" class="js-filter-checkbox"
+    data-type="electronics">
+    <p>Electronics</p>
+  </div>
+  <div>
+    <input type="checkbox" class="js-filter-checkbox"
+    data-type="books">
+    <p>Books</p>
+  </div>
+  <div>
+    <input type="checkbox" class="js-filter-checkbox"
+    data-type="home">
+    <p>Home</p>
+  </div>
+  <button class="js-filter-search-button
+  filter-search-button">Filter</button>
+</nav>
+
+  <main>
+    <p class="title">Your Orders</p>
+    <div class="order-grid js-order-grid"></div>
+  </main>
+
+  <script src="scripts/orders.js" type="module"></script>
+</body>
+</html>

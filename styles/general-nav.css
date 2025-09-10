@@ -1,0 +1,57 @@
+nav {
+  position: fixed;
+  background-color: rgb(43, 60, 54);
+  border-bottom-right-radius: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  width: 0;
+  transition: width 0.3s;
+}
+.nav-shown {
+  width: 180px;
+  padding-left: 8px;
+}
+
+nav div {
+  display: flex;
+  margin: 20px 0;
+}
+
+nav input {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  outline: none;
+}
+
+nav p {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(255, 151, 102);
+  margin-left: 13px;
+}
+
+.filter-search-button {
+  border: none;
+  background-color: rgb(107, 254, 105);
+  width: 160px;
+  height: 36px;
+  font-size: 18px;
+  border-radius: 8px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.x-icon {
+  width: 25px;
+}
+
+.x-button {
+  width: fit-content;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
