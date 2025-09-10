@@ -16,7 +16,7 @@ function searchUsingSearchBar() {
   const search = document.querySelector('.js-search-bar')
     .value.toLowerCase();
 
-  window.location.href = `/?search=${search}`;
+  window.location.href = `index.html?search=${search}`;
 }
 
 document.querySelector('.js-search-button')
@@ -50,4 +50,5 @@ document.querySelector('.js-x-button')
     if (nav === true) {nav =  false};
     document.querySelector('.js-nav')
       .classList.remove('nav-shown');
+
   });
