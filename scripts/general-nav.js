@@ -7,5 +7,6 @@ document.querySelector('.js-filter-search-button')
           filteredtypes += checkbox.dataset.type;
         }
       });
-    window.location.href = `/?filteredtypes=${filteredtypes}`;
+    window.location.href = `index.html?filteredtypes=${filteredtypes}`;
+
   });
